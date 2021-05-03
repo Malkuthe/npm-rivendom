@@ -1,0 +1,106 @@
+{
+  source: 'rivendom',
+  name: 'Impulse',
+  size: 'S',
+  ac: [
+    12
+  ],
+  alignment: [
+    {
+      alignment: [
+        'L',
+        'NX',
+        'C',
+        'NY',
+        'E'
+      ],
+      chance: '20',
+      note: 'When pissed off'
+    },
+    {
+      alignment: [
+        'E'
+      ],
+      note: 'when corrupted'
+    }
+  ],
+  speed: {
+    walk: 0,
+    fly: {
+      number: 30,
+      condition: '(hover)'
+    },
+    canHover: true
+  },
+  str: 6,
+  dex: 18,
+  con: 17,
+  int: 10,
+  wis: 13,
+  cha: 18,
+  type: 'fey',
+  hp: {
+    average: '19',
+    formula: '3d6'
+  },
+  cr: {
+    cr: '1/2',
+    lair: '4'
+  },
+  senses: [
+    'darkvision 60 ft.',
+    'truesight 20 ft.'
+  ],
+  passive: '13',
+  vulnerable: [
+    {
+      vulnerable: [
+        'acid',
+        'cold',
+        'fire'
+      ]
+    },
+    {
+      vulnerable: [
+        'bludgeoning'
+      ]
+    }
+  ],
+  resist: [
+    {
+      resist: [
+        'cold',
+        'fire',
+        'lightning'
+      ],
+      note: 'from good-aligned creatures',
+      preNote: 'one of the following:'
+    },
+    {
+      resist: [
+        'bludgeoning',
+        'piercing',
+        'slashing'
+      ],
+      note: 'from nonmagical weapons',
+      preNote: 'one of the following:'
+    }
+  ],
+  immune: [
+    {
+      immune: [
+        'bludgeoning',
+        'piercing',
+        'slashing'
+      ]
+    },
+    {
+      immune: [
+        'cold',
+        'fire',
+        'lightning'
+      ],
+      preNote: 'one of:'
+    }
+  ]
+}

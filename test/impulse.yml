@@ -1,0 +1,65 @@
+name: Impulse
+size: small
+type: fey
+alignment: any non-good alignment (20%) (When pissed off) or evil (when corrupted)
+
+ac: 12
+armor: leather
+
+hp: 19 (3d6 + 9)
+
+speed: 0 ft., fly 30 ft. (hover), swim 60 ft.
+
+abilities:
+  str: 6
+  dex: 18
+  con: 17
+  int: 10
+  wis: 13
+  cha: 18
+
+senses: darkvision 60 ft., truesight 20 ft., passive Perception 13
+
+skills:
+  Acrobatics: +8
+  Perception: +3
+
+saves:
+  Con: +6
+  Wis: +7
+
+cr:
+  cr: 1/2
+  lair: 4
+xp: 700
+
+damage:
+  resistances: "one of the following: cold, fire, and lightning damage from good-aligned creatures; one of the following: bludgeoning, piercing, and slashing damage from nonmagical weapons"
+  vulnerabilities: acid, cold, fire; bludgeoning damage
+  immunities: "bludgeoning, piercing, and slashing damage; one of: cold, fire, lightning"
+
+condition:
+  immunities: blinded, deafened, exhausted
+
+traits:
+  building-ire:
+    name: Building Ire
+    description: Each time the impulse takes damage during a turn, it gains an amount of Ire equal to the damage it took. It loses all Ire at the end of the turn.
+  unstable-constitution:
+    name: Unstable Constitution
+    description: At the end of each of its turns, the impulse loses 5 hit points. This loss of hit points does not trigger Building Ire,  does not grant any Ire to the impulse, and occurs after the impulse loses any Ire it has.
+  wrothful-expiration:
+    name: Wrothful Expiration
+    description: | 
+      If the impulse has Ire when it is reduced to 0 hit points, it explodes with a blast of eldritch energy. The explosion goes off in a spherical area centered around the impulse with a radius equal to the amount of Ire it has in feet rounded up to the nearest multiple of 5. 
+      
+      Each creature in range of the blast must make a DC 15 Wisdom saving throw, taking psychic damage equal to the amount of Ire the impulse has. Other impulses fail this saving throw automatically.
+
+attacks:
+  spark:
+    name: Spark
+    type: Melee Weapon Attack
+    tohit: +6
+    reach: 5 ft.
+    target: one creature
+    damage: 7 (1d6 + 4) lightning damage.
